@@ -1,0 +1,61 @@
+1) Configure the OCP cluster for new environment - provide access, work on storage configuration, Operator catalog, secret configuration, etc
+2) Manage OCP clusters - deployment, maintenance, updates of  products on multiple clusters. Operator deployments are automated, but during development/testing phases or dealing with new teams, such support is still required.
+3) Managing Jenkins CI/CD Jobs.
+4) Handling OCP version upgrades, re-installations, OCP support.
+5) Handling queries from multiple teams (Dev/Testing/Support/Sales teams) who are new to OCP environments.
+6) Troubleshooting environment issues.
+7) Education/Training multiple teams for deployment and management of clusters.
+8) OCP cluster health checks.
+9) ansible/shell
+
+
+
+in ansible how u can execute  playbooks parallel?
+hosts: mongodb:memcache
+  gather_facts: no
+  strategy: free
+  tasks:
+    - include: memcache.yml
+      when:  "'memcache' in group_names"
+	  
+	  
+how u can start a service after restart?/ if I rum systemctl enable docker what it will do
+	  
+	  
+How can you find the status of a process? : ps ux
+How can you check the memory status
+have u worked on disk partion?
+what is lvm?why do we use it?: logical partitoning
+how many partitions we can do for disk?: 4
+parted and fdisk?
+root user value in binary?
+
+
+i have one instace with some configuration now u need to use same instance in different region.
+
+kubeadm to upgrade kubernetes clusterdifference btwn kubeadm and kubectl
+
+drain and cordon?  drain me scheduling disabled and evect pod but in cordon only scheduling is disabled
+
+uncordon
+
+
+in case if an alert is firing for an node by grafana and whatwever deployment on that node is failing then what will be ur steps to debug that?
+
+sequence to update the nodes? without downtime
+
+can upadte be possible from 1.7 to 1.9? no
+
+if i run kind as deployment what kubernetes objects are cretaed?
+
+if i want to start one serveice supose db service before my app service runiing in same pod ..how to do that?
+
+difference btween init and side containers?
+
+
+difference btween ingress & route?
+
+can we make master to run as worker  node?
+
+
+ 
